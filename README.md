@@ -20,13 +20,13 @@
 
 <p><stronf>Далее, создаем функцию, то бы при нажатии на переключатель tabs показывался определенный таб, а остальные скрылись</stronf></p>
 
-`function showTabContent(b) {
+```function showTabContent(b) {
 		if (content[b].classList.contains('hide')) {
 			content[b].classList.remove('hide');
 			content[b].classList.add('show');
 		};
-};`
-
+};```
+`
 <p><strong>Далее, навешиваем на переключателю броботчик событий, для переключения табов по клику.</strong><p>
 
 ВНИМАНИЕ! Для того, чтобы не навешивать обработчики на каждый переключатель, мы делигируем событие определенному переключателю через его родитель!
@@ -35,12 +35,12 @@
 
 Структура HTML такая: 
 `<ul class = "info-header">
-  <li class = "info-header-tab">Первый переключатель<li>
-  <li class = "info-header-tab">Второй переключатель<li>
-  <li class = "info-header-tab">Третий переключатель<li>
+  <li class = "info-header-tab"><li>
+  <li class = "info-header-tab"><li>
+  <li class = "info-header-tab"><li>
 <ul>`
 
-`info.addEventListener('click', function(event) {
+```info.addEventListener('click', function(event) {
   let target = event.target;
   if (target && target.classList.contains('info-header-tab')) {
     for (let i = 0; i < tabs.length; i++) {
@@ -51,5 +51,5 @@
       };
     };
   };
-});`
+});```
 
