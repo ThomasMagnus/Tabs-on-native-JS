@@ -1,13 +1,13 @@
 # Tabs-on-native-JS
 <h2>Табы на нативном JavaScript</h2>
 
-<p><stronf>Для начала создаем переменные получая необходимые элементы:</stronf></p>	
+<p><strong>Для начала создаем переменные получая необходимые элементы:</strong></p>	
 
 `let tabs = document.querySelectorAll('.info-header-tab'), // переменная с массивом элементов переключения табов.` <br> 
 		`content = document.querySelectorAll('.info-tabcontent'), // переменная с табами` <br>
 		`info = document.querySelector('.info-header'); // родитель элементов переключения`  <br> 
     
-<p><stronf>Далее, прописываем функцию для скрытия всех табов, кроме одного</stronf></p>
+<p><strong>Далее, прописываем функцию для скрытия всех табов, кроме одного</strong></p>
 
 `function hideTabContent(a) {` <br> 
 		`for (let i = a; i < content.length; i++) {` <br>
@@ -18,15 +18,15 @@
 
 `hideTabContent(1); //  при вызове функции, в качестве аргумента ставим единичку, чтобы отображался только первый таб `
 
-<p><stronf>Далее, создаем функцию, то бы при нажатии на переключатель tabs показывался определенный таб, а остальные скрылись</stronf></p>
-
-```function showTabContent(b) {
+<p><strong>Далее, создаем функцию, то бы при нажатии на переключатель tabs показывался определенный таб, а остальные скрылись</strong></p>
+```
+function showTabContent(b) {
 		if (content[b].classList.contains('hide')) {
 			content[b].classList.remove('hide');
 			content[b].classList.add('show');
 		};
-};```
-`
+};
+```
 <p><strong>Далее, навешиваем на переключателю броботчик событий, для переключения табов по клику.</strong><p>
 
 ВНИМАНИЕ! Для того, чтобы не навешивать обработчики на каждый переключатель, мы делигируем событие определенному переключателю через его родитель!
