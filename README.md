@@ -3,9 +3,9 @@
 
 <p>Для начала создаем переменные получая необходимые элементы:</p>	
 
-<p>let tabs = document.querySelectorAll('.info-header-tab'), // переменная с массивом элементов переключения табов.
+`let tabs = document.querySelectorAll('.info-header-tab'), // переменная с массивом элементов переключения табов.
 		content = document.querySelectorAll('.info-tabcontent'), // переменная с табами
-		info = document.querySelector('.info-header'); // родитель элементов переключения </p>
+		info = document.querySelector('.info-header'); // родитель элементов переключения `
     
 Далее, прописываем функцию для скрытия всех табов, кроме одного
 
