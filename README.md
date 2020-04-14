@@ -2,12 +2,15 @@
 <h2>Табы на нативном JavaScript</h2>
 
 <p><strong>Для начала создаем переменные получая необходимые элементы:</strong></p>	
+
 ```
 let tabs = document.querySelectorAll('.info-header-tab'), // переменная с массивом элементов переключения табов.
 		content = document.querySelectorAll('.info-tabcontent'), // переменная с табами
 		info = document.querySelector('.info-header'); // родитель элементов переключения
 ```
+
 <p><strong>Далее, прописываем функцию для скрытия всех табов, кроме одного</strong></p>
+
 ```
 function hideTabContent(a) {` <br> 
 	for (let i = a; i < content.length; i++) {
@@ -16,6 +19,7 @@ function hideTabContent(a) {` <br>
 	};
 };
 ```
+
 ```
 hideTabContent(1); //  при вызове функции, в качестве аргумента ставим единичку, чтобы отображался только первый таб
 ```
