@@ -1,11 +1,11 @@
 # Tabs-on-native-JS
 <h2>Табы на нативном JavaScript</h2>
 
-Для начала создаем переменные получая необходимые элементы:
+<p>Для начала создаем переменные получая необходимые элементы:</p>	
 
-let tabs = document.querySelectorAll('.info-header-tab'), // переменная с массивом элементов переключения табов.
+<p>let tabs = document.querySelectorAll('.info-header-tab'), // переменная с массивом элементов переключения табов.
 		content = document.querySelectorAll('.info-tabcontent'), // переменная с табами
-		info = document.querySelector('.info-header'); // родитель элементов переключения
+		info = document.querySelector('.info-header'); // родитель элементов переключения </p>
     
 Далее, прописываем функцию для скрытия всех табов, кроме одного
 
